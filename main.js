@@ -13,13 +13,7 @@ function mergeOrganizationAndWebsite(org, website) {
 }
 
 function mergeTitleProject(title, project) {
-  res = '<p><span class="emphasis">Title: </span>' + title + '</p>';
-
-  if (project) {
-    res += '<p><span class="emphasis">Public Humanities Project: </span>' + project + '</p>';
-  }
-
-  return res;
+  return '<h3>' + title + '</h3> <p>' + project + '</p>';
 }
 
 
