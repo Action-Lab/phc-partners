@@ -9,7 +9,7 @@ Tabletop.init({
 function mergeOrganizationAndWebsite(org, website) {
   if (!website) { return org; }
   return '<span class="invisible">' + org + '</span>'
-    + '<a href="http://' + website + '">' + org + '</a>';
+    + '<a target="_blank" href="http://' + website + '">' + org + '</a>';
 }
 
 function mergeTitleResearchNeeds(title, research, needs) {
