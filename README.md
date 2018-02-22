@@ -1,8 +1,8 @@
-# phc-partners
-Display Google Forms application data on Public Humanities Collaborative web page
+# cli-phc-ideas
+Display Google Forms application data on Community Learning Initiative (CLI) Partner ideas web page.
 
 ## Live example
-http://commons.trincoll.edu/cli/phc
+[CLI Partners Ideas](http://commons.trincoll.edu/cli/partners/ideas)
 
 ## Requirements
 - Google Form responses must appear in Google Sheets, which must be published. Insert URLs in main.js
@@ -11,6 +11,7 @@ http://commons.trincoll.edu/cli/phc
 
 ## Credits
 Created by Ilya Ilyankou (@ilyankou) for Liberal Arts Action Lab, Hartford CT
+Updated on 2018.02.22 by Zorawar Moolenaar (@zorawar87)
 
 ## Dependencies
 * Tabletop v1.5.2, https://github.com/jsoma/tabletop
