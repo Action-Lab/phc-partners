@@ -1,7 +1,7 @@
-var facultyURL = 'https://docs.google.com/spreadsheets/d/1FOYpxQQQ9EZUsuBDR_LKwVsQRz7pHF414g_X27h7ajo/pubhtml';
+var ideasURL = 'https://docs.google.com/spreadsheets/d/10h3PmOuRoY9fJcpFoa1VJ0fSNrjYBFo0bc01FEpG_4s/pubhtml'
 
 Tabletop.init({
-  key: facultyURL,
+  key: ideasURL,
   callback: processData,
   simpleSheet: true,
 });
@@ -18,10 +18,10 @@ function mergeTitleResearchNeeds(title, research, needs) {
     res += '<h3>' + title + '</h3>';
   }
 
-  res += '<p><span class="emphasis">Public Humanities Project: </span>' + research + '</p>';
+  res += '<p><span class="emphasis">Project Idea: </span>' + research + '</p>';
 
   if (needs) {
-    res += '<p><span class="emphasis">Student Researchers: </span>' + needs + '</p>';
+    res += '<p><span class="emphasis">Student Role: </span>' + needs + '</p>';
   }
 
   return res;
@@ -46,7 +46,7 @@ function processData(data, tabletop) {
     // Add a row to the final dataset
     processedData.push([
       mergeOrganizationAndWebsite(r.Organization, r.Website) + '<br><br>' + emailToLink(r.Name, r.Email),
-      mergeTitleResearchNeeds(r.Title, r.Project, r['Student Researchers']),
+      mergeTitleResearchNeeds(r.Title, r.Project, r['Student Role']),
     ]);
   }
 
